@@ -1,3 +1,25 @@
+# Password Service
+### Description
+When defining passwords for an account, it’s often useful to tell the users the level of security of the passwords they choose.
+
+The goal of this project is helps our users select a good and strong password.
+## Installation
+### Clone project
+Clone project using Git over SSH.
+```sh
+$ git clone git@github.com:jeandias/app-ui.git
+$ cd app-api
+```
+### Install dependencies for project
+```sh
+$ npm install
+```
+### Start the server
+```sh
+$ export PORT=8000
+$ npm start
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -7,7 +29,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
