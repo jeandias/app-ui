@@ -8,7 +8,7 @@ The goal of this project is helps our users select a good and strong password.
 Clone project using Git over SSH.
 ```sh
 $ git clone git@github.com:jeandias/app-ui.git
-$ cd app-api
+$ cd app-ui
 ```
 ### Install dependencies for project
 ```sh
