@@ -51,20 +51,18 @@ class ValidatePassword extends Component {
 
   render() {
     return (
-      <div className="App">
-        <form>
-          <div className="form-group">
-            <label htmlFor="password">
-              Strength: <span className={this.badgeClass(this.state.strength)}>{this.state.strength}</span>
-            </label>
-            <input id="password" type="password"
-                   onChange={this.handleChange}
-                   className="form-control"
-                   placeholder="Your password" />
-          </div>
-          <UnorderedList results={this.state.results} />
-        </form>
-      </div>
+      <form>
+        <div className="form-group">
+          <label htmlFor="password">
+            Strength: <span className={this.badgeClass(this.state.strength)}>{this.state.strength}</span>
+          </label>
+          <input id="password" type="password"
+                 onChange={this.handleChange}
+                 className="form-control"
+                 placeholder="Your password" />
+        </div>
+        <UnorderedList results={this.state.results} />
+      </form>
     );
   }
 }
