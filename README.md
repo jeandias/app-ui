@@ -14,6 +14,11 @@ $ cd app-ui
 ```sh
 $ npm install
 ```
+### Define a Custom Environment Variable
+```sh
+$ vi .env.development
+REACT_APP_API_URL=http://localhost:3000/api/v1
+```
 ### Start the server
 ```sh
 $ export PORT=8000
