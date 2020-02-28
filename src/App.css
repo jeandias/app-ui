@@ -1,18 +1,5 @@
 .App {
   margin: 20px;
-  width: 500px;
-}
-
-input[type=password] {
-  padding: 4px 4px;
-  margin: 4px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: initial;
-}
-
-ul li {
-  color: #ff0000;
+  width: 400px;
+  font-family: 'Lato', sans-serif;
 }

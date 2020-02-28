@@ -40,12 +40,29 @@ class App extends Component {
     });
   }
 
+  badgeClass(value) {
+    if(value === "STRONG") {
+      return "badge badge-success"
+    } else if(value === "WEAK") {
+      return "badge badge-danger"
+    } else {
+      return "badge badge-secondary"
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <form>
-          <input type="password" value={this.state.value} onChange={this.handleChange} />
-          <span>{this.state.strength}</span>
+          <div className="form-group">
+          <label htmlFor="password">
+            Strength: <span className={this.badgeClass(this.state.strength)}>{this.state.strength}</span>
+          </label>
+          <input id="password" type="password"
+                 onChange={this.handleChange}
+                 className="form-control"
+                 placeholder="Your password" />
+          </div>
           <UnorderedList results={this.state.results} />
         </form>
       </div>
