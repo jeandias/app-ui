@@ -43,15 +43,13 @@ class ValidatePassword extends Component {
     let classes = "badge badge-";
 
     switch(value) {
-	    case "STRONG":
-		    return `${classes}success`
-		    break;
-	    case "WEAK":
-		    return`${classes}danger`
-		    break;
-	    default:
-		    return `${classes}secondary`
-	  }
+      case "STRONG":
+        return `${classes}success`;
+      case "WEAK":
+        return`${classes}danger`;
+      default:
+        return `${classes}secondary`;
+    }
   }
 
   render() {
