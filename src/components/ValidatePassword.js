@@ -40,13 +40,18 @@ class ValidatePassword extends Component {
   }
 
   badgeClass(value) {
-    if(value === "STRONG") {
-      return "badge badge-success"
-    } else if(value === "WEAK") {
-      return "badge badge-danger"
-    } else {
-      return "badge badge-secondary"
-    }
+    let classes = "badge badge-";
+
+    switch(value) {
+	    case "STRONG":
+		    return `${classes}success`
+		    break;
+	    case "WEAK":
+		    return`${classes}danger`
+		    break;
+	    default:
+		    return `${classes}secondary`
+	  }
   }
 
   render() {
